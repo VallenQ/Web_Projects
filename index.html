@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Lembretes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="register">
+            <h2>Cadastrar Usuário</h2>
+            <form id="registerForm">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Usuário:</label>
+                <input type="text" id="loginUsername" required>
+                <label for="loginPassword">Senha:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="lembretes" style="display: none;">
+            <h2>Lembretes</h2>
+            <div id="lembretesList"></div>
+            <form id="lembreteForm">
+                <input type="text" id="lembreteText" placeholder="Novo lembrete" required>
+                <button type="submit">Adicionar Lembrete</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
